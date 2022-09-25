@@ -9,6 +9,28 @@ def get_input_number():
         else :
             break
     return int(input_number)  
+
+def get_real_number():
+    while type:
+        real_number=input('Введите любое число  ')
+        try:
+            real_number=float(real_number)
+            break
+        except ValueError:
+            print('Неверный ввод числа!')
+            print('Повторите ввод')
+            continue
+        except TypeError:
+            print('Неверный ввод числа!')
+            print('Повторите ввод')
+            continue
+  
+    return  real_number           
+
+
+
+
+
 def get_list():
     print ('Введите размер списка')
     get_number=get_input_number()
